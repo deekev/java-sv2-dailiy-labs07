@@ -14,7 +14,7 @@ public class Courier {
                 throw new IllegalArgumentException("Nap nem lehet kisebb, mint az utolsó.");
             }
             if (ride.getDayOfWeek() == ridesLast.getDayOfWeek() && ride.getNumberOfRide() <= ridesLast.getNumberOfRide()) {
-                throw new IllegalArgumentException("Sorszám nagyobb legyen, mint az utolsó.");
+                throw new IllegalArgumentException("Sorszám lehet kisebb, mint az utolsó.");
             }
         }
         rides.add(ride);

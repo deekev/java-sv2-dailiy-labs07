@@ -3,7 +3,6 @@ package day04;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CourierFileManager {
@@ -14,7 +13,7 @@ public class CourierFileManager {
             rides = Files.readAllLines(path);
         }
         catch (IOException ioe) {
-            throw new IllegalStateException("File nem található", ioe);
+            throw new IllegalStateException("Can not read file.", ioe);
         }
 
         Courier courier = new Courier();
